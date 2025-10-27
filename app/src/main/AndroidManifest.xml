@@ -35,6 +35,9 @@
 
         <!-- ✅ Festival activity -->
         <activity android:name=".FestivalActivity" />
+        <activity android:name=".LoadingActivity" />
+
+
 
     </application>
 

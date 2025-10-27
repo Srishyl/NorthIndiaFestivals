@@ -12,9 +12,9 @@ class FestivalAdapter(
     private val stateName: String
 ) : RecyclerView.Adapter<FestivalAdapter.FestivalViewHolder>() {
 
-    class FestivalViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val card: CardView = itemView.findViewById(R.id.cardFestival)
-        val festivalName: TextView = itemView.findViewById(R.id.textFestivalName)
+    class FestivalViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val card: CardView = view.findViewById(R.id.cardFestival)
+        val festivalName: TextView = view.findViewById(R.id.textFestivalName)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FestivalViewHolder {
@@ -24,18 +24,7 @@ class FestivalAdapter(
     }
 
     override fun onBindViewHolder(holder: FestivalViewHolder, position: Int) {
-        val festival = festivals[position]
-        holder.festivalName.text = festival
-
-        // Random color background for fun appearance
-        val colors = listOf(
-            0xFFFFF59D.toInt(), // light yellow
-            0xFFB3E5FC.toInt(), // sky blue
-            0xFFFFCCBC.toInt(), // peach
-            0xFFC8E6C9.toInt(), // light green
-            0xFFD1C4E9.toInt()  // lavender
-        )
-        holder.card.setCardBackgroundColor(colors[position % colors.size])
+        holder.festivalName.text = festivals[position]
     }
 
     override fun getItemCount(): Int = festivals.size
