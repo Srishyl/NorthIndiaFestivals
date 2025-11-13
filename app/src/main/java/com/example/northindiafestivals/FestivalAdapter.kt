@@ -1,5 +1,6 @@
 package com.example.northindiafestivals
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +25,19 @@ class FestivalAdapter(
     }
 
     override fun onBindViewHolder(holder: FestivalViewHolder, position: Int) {
-        holder.festivalName.text = festivals[position]
+        val festival = festivals[position]
+        holder.festivalName.text = festival
+
+        // ⭐ CLICK EVENT HERE
+        holder.card.setOnClickListener {
+            val context = holder.itemView.context
+
+            val intent = Intent(context, FestivalDetailActivity::class.java)
+            intent.putExtra("STATE_NAME", stateName)
+            intent.putExtra("FESTIVAL_NAME", festival)
+
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = festivals.size

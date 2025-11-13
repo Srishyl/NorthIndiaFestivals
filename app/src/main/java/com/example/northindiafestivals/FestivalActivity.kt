@@ -31,7 +31,7 @@ class FestivalActivity : AppCompatActivity() {
         }
 
         val rv = findViewById<RecyclerView>(R.id.recyclerViewFestivals)
-        rv.layoutManager = GridLayoutManager(this, 2)
+        rv.layoutManager = GridLayoutManager(this, 1)
         rv.adapter = FestivalAdapter(festivals, stateName)
     }
 }
