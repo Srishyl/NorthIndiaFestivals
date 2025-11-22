@@ -5,18 +5,19 @@
     android:layout_height="match_parent"
     android:background="#FFF8E1"
     android:orientation="vertical"
-    android:padding="12dp"
+    android:padding="20dp"
     tools:context=".FestivalActivity">
+
     <TextView
         android:id="@+id/headerText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_width="371dp"
+        android:layout_height="85dp"
+        android:background="#FF9800"
         android:gravity="center"
         android:padding="16dp"
-        android:background="#FF9800"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewFestivals"

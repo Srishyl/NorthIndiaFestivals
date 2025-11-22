@@ -2,32 +2,63 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#FFFFFF">
+    android:fillViewport="true"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/festivalTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Festival Name"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:paddingBottom="10dp" />
+        <!-- Header Image Banner -->
+        <ImageView
+            android:id="@+id/festivalImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg"
+            android:background="#CCCCCC"
+            android:contentDescription="Festival Banner"
+            android:layout_marginBottom="16dp"
+            android:clipToOutline="true" />
 
-        <TextView
-            android:id="@+id/festivalDescription"
-            android:layout_width="wrap_content"
+        <!-- Card Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Festival description goes here..."
-            android:textSize="17sp"
-            android:textColor="#444444"
-            android:lineSpacingExtra="6dp" />
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:elevation="6dp">
+
+            <TextView
+                android:id="@+id/festivalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Festival Name"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:paddingBottom="12dp" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:background="#FF9800"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/festivalDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Festival description goes here..."
+                android:textSize="17sp"
+                android:textColor="#4A4A4A"
+                android:lineSpacingExtra="8dp" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
