@@ -109,28 +109,50 @@ object FestivalDetailsProvider {
                 ),
                 FestivalDetail(
                     "Baisakhi",
-                    "Haryana celebrates Baisakhi with energetic folk dances and fairs."
+                    "n Haryana, Baisakhi is celebrated with agricultural devotion and community unity. For farmers, it marks the harvesting of the wheat crop, bringing hope and prosperity.\n" +
+                            "Villages hold fairs with wrestling matches, tug-of-war, bullock cart races and folk dances like phag dance.\n" +
+                            "People visit temples to offer thanks for a good harvest and pray for the upcoming season.\n" +
+                            "Traditional meals like bajra roti, saag, butter and lassi are prepared.\n" +
+                            "Baisakhi strengthens community ties and reflects Haryana’s rural pride and farming lifestyle."
                 ),
                 FestivalDetail(
                     "Gugga Naumi",
-                    "Festival dedicated to Gugga Pir, worshipped for protection from snakes."
+                    "Gugga Naumi is a unique folk festival dedicated to Gugga Pir, a heroic figure believed to protect people from snake bites.\n" +
+                            "Devotees form processions with flags, decorated horses and drums. Folk singers narrate stories about Gugga Pir’s bravery and miracles.\n" +
+                            "People draw snake symbols on walls and offer turmeric, rice, milk and flowers.\n" +
+                            "Children place small mud snake models at home doors for protection.\n" +
+                            "In many villages, a procession called “Gugga Par” moves house to house giving blessings.\n" +
+                            "The festival reflects Haryana’s connection to nature, folk traditions and protective deities."
                 )
             )
 
             "Uttar Pradesh" -> listOf(
                 FestivalDetail(
                     "Deepotsav",
-                    "Deepotsav in Ayodhya is world-famous. Millions of diyas are lit on the banks of the Saryu River. " +
-                            "The entire city glows as it celebrates the return of Lord Rama."
+                    "Deepotsav in Ayodhya has gained international recognition for lighting millions of diyas along the Sarayu River and across the sacred city.\n" +
+                            "It celebrates the return of Lord Rama, Sita and Lakshmana after 14 years of exile.\n" +
+                            "Ram Ki Paidi ghats glow with endless rows of lamps, creating a heavenly golden reflection on the water.\n" +
+                            "The entire city becomes a stage for cultural shows, Ram-Leela performances, fireworks, drone shows and classical dance events.\n" +
+                            "Ayodhya breaks Guinness World Records every year for lamp illumination.\n" +
+                            "The festival promotes devotion, tourism and the cultural revival of Ramayana traditions."
                 ),
                 FestivalDetail(
                     "Kumbh Mela",
-                    "Held in Prayagraj, this is the world’s largest spiritual gathering. " +
-                            "Millions take a holy dip at Sangam for spiritual purification."
+                    "Kumbh Mela is the largest religious gathering on Earth. Held at Prayagraj, it celebrates the spiritual importance of the Sangam, the meeting point of Ganga, Yamuna and Saraswati.\n" +
+                            "Millions arrive to take the sacred bath, believed to purify the soul.\n" +
+                            "Sadhus from different akharas arrive in grand processions, chanting holy mantras.\n" +
+                            "Ash-smeared Naga sadhus, saints performing yoga, spiritual talks, meditation camps and chanting create a divine atmosphere.\n" +
+                            "The event represents India’s deep spiritual heritage and attracts visitors from across the globe."
                 ),
                 FestivalDetail(
                     "Janmashtami",
-                    "Celebrating the birth of Lord Krishna with Dahi-Handi, devotional songs and beautifully decorated temples."
+                    "Janmashtami in Mathura and Vrindavan celebrates the birth of Lord Krishna, making it one of the most emotional and devotional festivals in India.\n" +
+                            "Temples are decorated with flowers, lights and Jhankis (scenes from Krishna’s life).\n" +
+                            "Devotees fast the entire day and break it only after midnight, the birth time of Krishna.\n" +
+                            "In Vrindavan, ISKCON temple, Banke Bihari temple and Mathura’s Janmabhoomi temple witness huge crowds.\n" +
+                            "Dahi-Handi competitions recreate Krishna’s childhood activities of stealing butter.\n" +
+                            "Ras-Leela dance dramas narrate his playful life with Radha and the gopis.\n" +
+                            "The festival spreads devotion, love, joy and spiritual purity."
                 )
             )
 
@@ -222,15 +244,27 @@ object FestivalDetailsProvider {
             "Jammu and Kashmir" -> listOf(
                 FestivalDetail(
                     "Tulip Festival",
-                    "Held in Srinagar’s Tulip Garden, Asia's largest. It celebrates spring with thousands of blooming flowers."
+                    "The Tulip Festival in Srinagar is a spectacular celebration of spring, held every year in April at the Indira Gandhi Memorial Tulip Garden — the largest tulip garden in all of Asia. Located at the foothills of the Zabarwan mountain range and overlooking the beautiful Dal Lake, the garden becomes a rainbow of colors with more than 1.5 million tulips blooming at once.\n" +
+                            "The festival attracts tourists, botanists, nature lovers and photographers from across the world. Different varieties of tulips such as Parrot Tulips, Double Bloom, fringed tulips and single early tulips are planted in well-organized terraces, creating breathtaking views.\n" +
+                            "Apart from the flowers, the festival also showcases Kashmiri culture through handicraft stalls, cultural dances, live music, and exhibitions of traditional arts like papier-mâché, carpets and pashmina.\n" +
+                            "Local Kashmiri dishes such as kehwa, rogan josh, gushtaba, and local breads are available for visitors. The festival not only boosts tourism but also symbolizes new beginnings, peace and the natural beauty of the Kashmir Valley."
                 ),
                 FestivalDetail(
                     "Eid",
-                    "People offer prayers, give charity and enjoy the traditional Kashmiri wazwan feast."
+                    "Eid in Jammu & Kashmir is celebrated with devotion and deep cultural belonging. On Eid morning, thousands gather at Eidgahs and mosques for mass prayers. The serenity of Eid gatherings in Kashmir — surrounded by mountains, rivers and beautiful valleys — gives the celebration a unique feel.\n" +
+                            "People wear new pherans or traditional dresses and exchange warm greetings. The homes are filled with the aroma of sheer khurma, phirni, and Kashmiri wazwan dishes like rista, tabak maaz and yakhni.\n" +
+                            "Children receive gifts and eidi from elders, and families visit relatives to offer blessings.\n" +
+                            "Kashmiris also believe strongly in charity, so many people donate food, clothes or money to the needy, making sure everyone has a happy Eid.\n" +
+                            "Streets become lively with shops selling dry fruits, bakery items, perfumes and festive outfits. Eid in Kashmir beautifully blends spirituality, family bonding and the region’s rich culinary heritage."
                 ),
                 FestivalDetail(
                     "Lohri",
-                    "Celebrated with bonfires, songs and folk dances marking winter's end."
+                    "In Jammu, Lohri is celebrated with enthusiasm as a winter harvest festival. Families gather around a bonfire on the cold January night, offering puffed rice, peanuts, jaggery and sesame seeds to the fire.\n" +
+                            "Women wear traditional phirans and jewelry, while children go from house to house singing Lohri songs and receiving sweets.\n" +
+                            "Bonfires symbolize warmth, hope and the end of the harsh winter.\n" +
+                            "Newlyweds and parents of newborn babies celebrate their first Lohri with extra joy, inviting relatives for feasts.\n" +
+                            "Folk dances like gidda and bhangra are performed, and communities come together to share traditional dishes like rajma, makki di roti and various dry fruits.\n" +
+                            "In Jammu, Lohri represents the spirit of togetherness, gratitude and cultural pride."
                 )
             )
 
