@@ -1,6 +1,7 @@
 package com.example.northindiafestivals
 
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -12,16 +13,19 @@ class FestivalDetailActivity : AppCompatActivity() {
 
         val festivalTitle = findViewById<TextView>(R.id.festivalTitle)
         val festivalDescription = findViewById<TextView>(R.id.festivalDescription)
+        val festivalImage = findViewById<ImageView>(R.id.festivalImage)
 
+        // Get values from Intent
         val state = intent.getStringExtra("STATE_NAME") ?: ""
         val festivalName = intent.getStringExtra("FESTIVAL_NAME") ?: ""
 
+        // Set festival title
         festivalTitle.text = festivalName
 
-        // Get full details list
+        // Get full details of the state
         val detailsList = FestivalDetailsProvider.getFestivalDetails(state)
 
-        // Find the matching festival detail
+        // Find the festival in that state
         val selectedFestival = detailsList.find { it.name == festivalName }
 
         if (selectedFestival != null) {
@@ -29,5 +33,9 @@ class FestivalDetailActivity : AppCompatActivity() {
         } else {
             festivalDescription.text = "No details found for this festival."
         }
+
+        // Set image dynamically based on festival
+        val imageRes = FestivalSingleImageProvider.getImage(festivalName)
+        festivalImage.setImageResource(imageRes)
     }
 }
